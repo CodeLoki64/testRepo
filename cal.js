@@ -10,7 +10,7 @@ function compute(){
     var p = document.getElementById("amt").value;
     var r = document.getElementById("rate").value;
     var y = document.getElementById("ny").value;
-    var si = (p * r * t)/100;
+    var si = (p * r * y)/100;
     var tamt = parseInt(p) + parseFloat(si);
     var res = document.getElementById("res");
     var fy = new Date().getFullYear() + parseInt(y);
