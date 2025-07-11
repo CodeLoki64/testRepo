@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src = "cal.js"></script>
+        <link rel="stylesheet" type = "text/css" href="styles.css"/>
+    </head>
+    <body>
+        
+        <div class="main-div">
+            <h1>Simple Interest Calculator</h1>
+            <fieldset>
+                <legend><b>CALCULATE</b></legend>
+                <label for="amt">Amount </label>
+                <input type="number" id="amt"><br/><br>
+                <label for="rate">Rate</label>
+                <input type="range" min="1" max="20" value="10.25" step="0.25" id="rate" onchange="updateRate()">
+                <input type="number" id="rate_val" min="1" max="20" value="10.25" onchange="updater()">%<br><br>
+                <label for="ny">No. of Years</label>
+                <input type="number" id="ny" list="all_years">
+                <datalist id="all_years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist><br><br>
+                <button onclick="compute()">Compute Interest</button>
+                <span id="res">
+
+                </span>
+            </fieldset>
+        </div>
+
+    </body>
+</html>
